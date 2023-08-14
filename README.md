@@ -3,7 +3,9 @@
 Tutorial
 
 Abrir a pasta /Locacao e rodar o seguinte comando: 
+
  mvn spring-boot:run
+ 
 
 Após, entrar no MySql, usar o comando 'use Locadora'
 e rodar o script insert.sql
@@ -11,6 +13,7 @@ e rodar o script insert.sql
 Com isso, terá o administrador:
 
 login: kaline
+
 senha: kaline
 
 E uma locadora com uma locação. O restante, poderá ser feito pela aplicação Web.\
