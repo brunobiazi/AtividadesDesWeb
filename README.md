@@ -1,6 +1,6 @@
 # AtividadesDesWeb
 
-R1
+R1 \n
 
 (X) Implementado ( ) Parcialmente implementado ( ) Não implementado
 
