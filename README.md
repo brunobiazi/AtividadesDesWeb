@@ -7,7 +7,7 @@ Abrir a pasta /Locacao e rodar o seguinte comando:
  mvn spring-boot:run
  
 
-Após, entrar no MySql, usar o comando 'use Locadora'
+Após, entrar no MySql(usuario e senha -> root), usar o comando 'use Locadora'
 e rodar o script insert.sql
 
 Com isso, terá o administrador:
