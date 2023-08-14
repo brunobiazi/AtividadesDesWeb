@@ -2,7 +2,7 @@
 
 Tutorial
 
-Abrir a pasta /Locacao e rodar o seguinte comando: \n
+Abrir a pasta /Locacao e rodar o seguinte comando: 
  mvn spring-boot:run
 
 Após, entrar no MySql, usar o comando 'use Locadora'
