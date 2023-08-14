@@ -1,6 +1,6 @@
 ## Atividade Avaliativa 2 de Des. Web
 
-#Tutorial
+Tutorial
 
 Abrir a pasta /Locacao e rodar o seguinte comando: \n
  mvn spring-boot:run
@@ -14,7 +14,7 @@ senha: kaline
 
 E uma locadora com uma locação. O restante, poderá ser feito pela aplicação Web.\
 
-#Requisitos feitos: 
+Requisitos feitos: 
 
 
 R1 \n
