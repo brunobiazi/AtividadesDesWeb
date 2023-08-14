@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title th:text="#{cities.title}">Cities with available bike rental shops</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    select, button {
+      margin-bottom: 10px;
+      padding: 5px;
+      width: 100%;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    button {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #555;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 th:text="#{cities.heading}">Cities with available bike rental shops</h1>
+  </header>
+  <div class="container">
+    <form th:action="@{/resultadocidades}" method="post">
+      <select name="cidade" id="cidade" required>
+        <option th:each="cidade : ${cidades}" th:value="${cidade}" th:text="${cidade}"></option>
+      </select>
+      <button type="submit" th:text="#{cities.submit}">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
+

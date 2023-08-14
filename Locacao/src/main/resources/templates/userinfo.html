@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{userinfoPage.title}">User Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            text-align: left;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        p.label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        p.value {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 th:text="#{userinfoPage.heading}">User Information</h1>
+        <p class="label">Username:</p>
+        <p class="value" th:text="${user.username}"></p>
+        
+        <p class="label">Email:</p>
+        <p class="value" th:text="${user.email}"></p>
+        
+        <p class="label" th:text="#{userinfoPage.cpfLabel}">CPF:</p>
+        <p class="value" th:text="${cliente.cpf}"></p>
+        
+        <p class="label" th:text="#{userinfoPage.genderLabel}">Gender:</p>
+        <p class="value" th:text="${cliente.sexo}"></p>
+        
+        <p class="label" th:text="#{userinfoPage.phoneLabel}">Phone:</p>
+        <p class="value" th:text="${cliente.telefone}"></p>
+        
+        <p class="label" th:text="#{userinfoPage.birthdayLabel}">Birthday:</p>
+        <p class="value" th:text="${cliente.dataDeNascimento}"></p>
+        
+        <!-- Display other user properties as needed -->
+    </div>
+</body>
+</html>

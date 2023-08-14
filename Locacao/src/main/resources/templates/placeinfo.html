@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{companyInfo.title}">Company Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            text-align: left;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+
+        h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        p.label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        p.value {
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+    </style>
+    <script>
+        // Your JavaScript code here...
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 th:text="#{companyInfo.heading}">Company Information</h1>
+        
+        <p class="label" th:text="#{companyInfo.usernameLabel}">Username:</p>
+        <p class="value" th:text="${user.username}"></p>
+        
+        <p class="label" th:text="#{companyInfo.emailLabel}">Email:</p>
+        <p class="value" th:text="${user.email}"></p>
+        
+        <p class="label" th:text="#{companyInfo.cpfCnpjLabel}">CPF/CNPJ:</p>
+        <p class="value" th:text="${user.cpfCnpj}"></p>
+        
+        <p class="label" th:text="#{companyInfo.cityLabel}">City:</p>
+        <p class="value" th:text="${locadora.cidade}"></p>
+        
+        <!-- Display other company properties as needed -->
+    </div>
+</body>
+</html>
