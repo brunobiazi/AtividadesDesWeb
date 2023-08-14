@@ -9,6 +9,7 @@ Após, entrar no MySql, usar o comando 'use Locadora'
 e rodar o script insert.sql
 
 Com isso, terá o administrador:
+
 login: kaline
 senha: kaline
 
@@ -17,7 +18,7 @@ E uma locadora com uma locação. O restante, poderá ser feito pela aplicação
 Requisitos feitos: 
 
 
-R1 \n
+R1 
 
 (X) Implementado ( ) Parcialmente implementado ( ) Não implementado
 
