@@ -16,7 +16,7 @@ login: kaline
 
 senha: kaline
 
-E uma locadora com uma locação. O restante, poderá ser feito pela aplicação Web.\
+E uma locadora com uma locação. O restante, poderá ser feito pela aplicação Web.
 
 Requisitos feitos: 
 
