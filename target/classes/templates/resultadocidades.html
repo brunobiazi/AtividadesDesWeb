@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title th:text="#{bikeShops.title}">Bike shops available in this city</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 5px 0;
+            border-bottom: 1px solid #ccc;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 5px 10px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 th:text="#{bikeShops.heading}">Bike shops available in this city</h1>
+    </header>
+    <div class="container">
+        <p th:text="#{bikeShops.cityLabel}">City: <span th:text="${cidade}"></span></p>
+        <ul>
+            <li th:each="user : ${users}" th:text="${user}"></li>
+        </ul>
+        <button th:text="#{bikeShops.goBackButton}" onclick="window.location.href='/buscarcidades'">Go back</button>
+    </div>
+</body>
+</html>
