@@ -1,26 +1,33 @@
-## Atividade Avaliativa 2 de Des. Web
+## Atividade Avaliativa 1 de Des. Web
 
-Tutorial
+#Tutorial
 
 Abrir a pasta /Locacao e rodar o seguinte comando: 
+```
+ mvn tomcat7:deploy
+```
 
- mvn spring-boot:run
- 
+Após, entrar no MySql:
+```
+usuario: root
+senha: root
+```
 
-Após, entrar no MySql(usuario e senha -> root), usar o comando 'use Locadora'
-e rodar o script insert.sql
+Rode o script 
+
+```create.sql
+```
 
 Com isso, terá o administrador:
+```
+login: admin@gmail.com
 
-login: kaline
-
-senha: kaline
-
-E uma locadora com uma locação. O restante, poderá ser feito pela aplicação Web.
-
-Requisitos feitos: 
+senha: abc123
+```
+E uma locadora com diversas locações. O restante, poderá ser feito pela aplicação Web.
 
 
+# Requisitos feitos: 
 R1 
 
 (X) Implementado ( ) Parcialmente implementado ( ) Não implementado
