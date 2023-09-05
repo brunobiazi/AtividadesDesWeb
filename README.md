@@ -15,7 +15,8 @@ senha: root
 
 Rode o script 
 
-```create.sql
+```
+create.sql
 ```
 
 Com isso, terá o administrador:
