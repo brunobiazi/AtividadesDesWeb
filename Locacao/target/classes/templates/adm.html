@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title th:text="#{admin.title}">User administration</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    form {
+      margin-bottom: 20px;
+      padding: 10px;
+      background-color: #f5f5f5;
+      border-radius: 5px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    select, button {
+      margin: 5px;
+      padding: 5px 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .top-right {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 th:text="#{admin.heading}">User administration</h1>
+  </header>
+  <div class="container">
+    <!-- Editar Locadora Section -->
+    <form th:action="@{/user}" method="get">
+      <h2>Edit Company (Locadora)</h2>
+      <label for="UsuarioLocadora" th:text="#{admin.company.label}">Company:</label>
+      <select id="UsuarioLocadora" name="UsuarioLocadora">
+        <!-- Options for company (usuariolocadora) -->
+        <!-- Use Thymeleaf to iterate over the list of commercial partners -->
+        <option th:each="partner : ${commercialpartners}" th:value="${partner}" th:text="${partner}"></option>
+      </select>
+      <br>
+      <button type="submit" formaction="readlocadora" th:text="#{admin.company.consult}">Consult</button>
+      <button type="submit" formaction="registrarlocadora" name="action" value="createLocadora" th:text="#{admin.company.create}">Create</button>
+      <button type="submit" name="action" formaction="editarlocadora" value="updateLocadora" th:text="#{admin.company.update}">Update</button>
+      <button type="submit" name="action" formaction="deleteLocadora" value="deleteLocadora" th:text="#{admin.company.delete}">Delete</button>
+    </form>
+
+    <!-- Editar Clientes Section -->
+    <form th:action="@{/user}" method="get">
+      <h2>Edit Client</h2>
+      <label for="usuariocliente" th:text="#{admin.client.label}">Client:</label>
+      <select id="usuariocliente" name="usuariocliente">
+        <!-- Options for client (usuariocliente) -->
+        <!-- Use Thymeleaf to iterate over the list of all clients -->
+        <option th:each="client : ${allclients}" th:value="${client}" th:text="${client}"></option>
+      </select>
+      <br>
+      <button type="submit" name="username" th:value="${username}" th:text="#{admin.client.consult}">Consult</button>
+      <button type="submit" formaction="registrarcliente" name="action" value="createCliente" th:text="#{admin.client.create}">Create</button>
+      <button type="submit" name="action" formaction="editarcliente" value="updateCliente" th:text="#{admin.client.update}">Update</button>
+      <button type="submit" name="action" formaction="deletecliente" value="deleteCliente" th:text="#{admin.client.delete}">Delete</button>
+    </form>
+    <button onclick="window.location.href='/'">Voltar</button>
+
+</body>
+</html>
