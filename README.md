@@ -3,8 +3,8 @@
 # T1 
 https://github.com/brunobiazi/AtividadesDesWeb/tree/T1 
 
-#T2 
+# T2 
 https://github.com/brunobiazi/AtividadesDesWeb/tree/T2 
 
-#T3
+# T3
 https://github.com/brunobiazi/AtividadesDesWeb/tree/T3
