@@ -3,7 +3,7 @@
 Mesmas atribuições do Trab 2.
 ## Atividade Avaliativa 2 de Des. Web
 
-*Tutorial
+# Tutorial
 
 Abrir a pasta /Locacao e rodar o seguinte comando: 
 ```
@@ -18,7 +18,7 @@ senha: senha
 
 E uma locadora com uma locação. O restante, poderá ser feito pela aplicação Web e pelo Postman.
 
-*Requisitos feitos: 
+# Requisitos feitos: 
 
 R1 
 
